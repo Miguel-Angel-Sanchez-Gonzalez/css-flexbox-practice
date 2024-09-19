@@ -15,5 +15,34 @@ body {
   margin: 10px;
   border: solid 1px black;
   border-radius: 10px;
-  background: #f18c55;
+  background: violet;
+}
+
+.flex-container {
+  height: 500px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+
+.one{
+  height: 100px;
+  order: 1;
+  align-self: flex-end;
+}
+
+.two{
+  height: 150px;
+  order: -1;
+  margin-right: auto;
+}
+
+.three {
+  height: 100px;
+  align-self: flex-start;
 }
