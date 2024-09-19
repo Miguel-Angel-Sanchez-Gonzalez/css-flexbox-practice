@@ -6,43 +6,37 @@ body {
 
 .flex-container {
   background-color: #404040;
-  border-radius: 10px;
-  border: solid 2px yellow;
 }
 
 .flex-container > * {
-  padding: 10px;
-  margin: 10px;
-  border: solid 1px black;
   border-radius: 10px;
   background: violet;
 }
 
 .flex-container {
-  height: 500px;
   display: flex;
   /* flex-direction: row;
   flex-wrap: wrap; */
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   align-content: space-around;
 }
 
-
-.one{
+.one {
   height: 100px;
-  order: 1;
-  align-self: flex-end;
+  width: 150px;
+  flex: 1;
 }
 
-.two{
-  height: 150px;
-  order: -1;
-  margin-right: auto;
+.two {
+  height: 100px;
+  width: 150px;
+  flex: 2;
 }
 
 .three {
   height: 100px;
-  align-self: flex-start;
+  width: 150px;
+  flex: 1;
 }
